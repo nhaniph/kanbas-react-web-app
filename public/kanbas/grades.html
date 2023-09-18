@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grades</title>
+  </head>
+  <body>
+    <table width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Commons</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#">Modules</a></li>
+              <li><a href="#">Piazza</a></li>
+              <li><a href="#">Zoom Meetings</a></li>
+              <li><a href="assignments/index.html">Assignments</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="grades.html">Grades</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Panopto Video</a></li>
+              <li><a href="#">Discussions</a></li>
+              <li><a href="#">Anouncements</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Rubrics</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Collaborations</a></li>
+              <li><a href="#">Syllabus</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </td>
+          <td>
+            <span>
+              <select id="">
+                <option selected value="gradebook">Gradebook</option>
+              </select>
+              <button>Import</button>
+              <select id="">
+                <option selected value="export">Export</option>
+              </select>
+              <button>Configure</button>
+            </span>
+            <br />
+
+            <h3>Student Names</h3>
+            <input id="student-names" placeholder="Search Students" />
+            <br />
+
+            <h3>Assignment Names</h3>
+            <input
+              id="assignment-names"
+              placeholder="Search Assignments"
+            /><br />
+
+            <button>Apply Filters</button>
+            <br />
+
+            <table border="1">
+              <tr>
+                <th>Student Names</th>
+                <th>Course 1</th>
+                <th>Course 2</th>
+                <th>Course 3</th>
+                <th>Course 4</th>
+              </tr>
+              <!-- Repeat the following row 10 times for a 10x10 table -->
+              <tr>
+                <td>Student 1</td>
+                <td><input type="text" /></td>
+                <td>91</td>
+                <td><input type="text" /></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Student 2</td>
+                <td>73</td>
+                <td><input type="text" /></td>
+                <td><input type="text" /></td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>Student 3</td>
+                <td><input type="text" /></td>
+                <td><input type="text" /></td>
+                <td>89</td>
+                <td>97</td>
+              </tr>
+              <tr>
+                <td>Student 4</td>
+                <td><input type="text" /></td>
+                <td>84</td>
+                <td><input type="text" /></td>
+                <td><input type="text" /></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
