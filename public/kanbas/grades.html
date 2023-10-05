@@ -4,74 +4,261 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Grades</title>
+    <style>
+      /* Custom CSS for the Edit Assignment screen */
+      /* Sidebar styling */
+      #account-sidebar {
+        background-color: #fff;
+        border-right: 1px solid #000;
+      }
+
+      #account-sidebar .active a {
+        color: #000;
+        border-left: 5px solid #000;
+      }
+
+      /* Breadcrumb styling */
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: " > ";
+      }
+
+      /* Form styling */
+      .form-label {
+        font-weight: bold;
+      }
+
+      /* Custom styling */
+      .table th,
+      .table td {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <table width="100%">
-      <tbody>
-        <tr>
-          <td>
-            <ul>
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="assignments/index.html">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="grades.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Anouncements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="#">Settings</a></li>
-            </ul>
-          </td>
-          <td>
-            <span>
-              <select id="">
+    <div class="wrapper d-flex align-items-stretch">
+      <!-- Kanbas Navigation Sidebar -->
+      <nav id="sidebar" class="active">
+        <h1>
+          <a href="../home.html" class="logo">N</a>
+        </h1>
+        <ul class="list-unstyled components mb-5">
+          <li>
+            <a href="../profile/index.html">
+              <span class="fa fa-user" style="color: #d0d6d3"></span>
+              Account
+            </a>
+          </li>
+          <li class="active">
+            <a href="../courses/index.html">
+              <span class="fa fa-solid fa-gauge" style="color: #ff0000"></span>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-solid fa-book" style="color: #ff0000"></span>
+              Courses
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa fa-regular fa-calendar"
+                style="color: #ff0000"
+              ></span>
+              Calendar
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-solid fa-inbox" style="color: #ff0000"></span>
+              Inbox
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa fa-regular fa-clock"
+                style="color: #ff0000"
+              ></span>
+              History
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa fa-solid fa-circle-info"
+                style="color: #ff0000"
+              ></span>
+              Studio
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-paper-plane" style="color: #ff0000"></span>
+              Commons
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa fa-solid fa-circle-info"
+                style="color: #ff0000"
+              ></span>
+              Help
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Course Navigation Sidebar -->
+      <ul id="account-sidebar" class="p-4">
+        <li>
+          <a href="../kanbas/courses/course.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Modules</a>
+        </li>
+        <li>
+          <a href="#">Piazza</a>
+        </li>
+        <li>
+          <a href="#">Zoom Meetings</a>
+        </li>
+        <li>
+          <a href="../kanbas/assignments/index.html">Assignments</a>
+        </li>
+        <li>
+          <a href="#">Quizzes</a>
+        </li>
+        <li class="active">
+          <a
+            href="grades.html"
+            style="color: black; border-left: 5px solid black"
+          >
+            Grades
+          </a>
+        </li>
+        <li>
+          <a href="#">People</a>
+        </li>
+        <li>
+          <a href="#">Panopto Video</a>
+        </li>
+        <li>
+          <a href="#">Discussions</a>
+        </li>
+        <li>
+          <a href="#">Announcements</a>
+        </li>
+        <li>
+          <a href="#">Pages</a>
+        </li>
+        <li>
+          <a href="#">Files</a>
+        </li>
+        <li>
+          <a href="#">Rubrics</a>
+        </li>
+        <li>
+          <a href="#">Outcomes</a>
+        </li>
+        <li>
+          <a href="#">Collaborations</a>
+        </li>
+        <li>
+          <a href="#">Syllabus</a>
+        </li>
+        <li>
+          <a href="#">Progress Reports (EAB Navigate)</a>
+        </li>
+        <li>
+          <a href="#">Settings</a>
+        </li>
+      </ul>
+      <div id="content" class="p-4 p-md-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Course Name</a></li>
+            <li class="breadcrumb-item"><a href="#">Term</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Grades</li>
+          </ol>
+        </nav>
+        <hr />
+
+        <!-- Edit Assignment Form -->
+        <div class="container">
+          <
+          <div class="row">
+            <div class="col-md-3">
+              <select class="form-control">
                 <option selected value="gradebook">Gradebook</option>
               </select>
-              <button>Import</button>
-              <select id="">
-                <option selected value="export">Export</option>
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-primary">
+                <i class="fa-solid fa-upload"></i> Import
+              </button>
+            </div>
+            <div class="col-md-3">
+              <select class="form-control">
+                <option selected value="export">
+                  <i class="fas fa-file-export"></i> Export
+                </option>
               </select>
-              <button>Configure</button>
-            </span>
-            <br />
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-primary">
+                <i class="fa-solid fa-edit"></i> Configure
+              </button>
+            </div>
+          </div>
+          <br />
 
-            <h3>Student Names</h3>
-            <input id="student-names" placeholder="Search Students" />
-            <br />
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Student Names</h3>
+              <input
+                id="student-names"
+                class="form-control"
+                placeholder="Search Students"
+              />
+            </div>
+            <div class="col-md-6">
+              <h3>Assignment Names</h3>
+              <input
+                id="assignment-names"
+                class="form-control"
+                placeholder="Search Assignments"
+              />
+            </div>
+          </div>
+          <br />
 
-            <h3>Assignment Names</h3>
-            <input
-              id="assignment-names"
-              placeholder="Search Assignments"
-            /><br />
+          <div class="row">
+            <div class="col-md-12">
+              <button class="btn btn-primary">Apply Filters</button>
+            </div>
+          </div>
+          <br />
 
-            <button>Apply Filters</button>
-            <br />
-
-            <table border="1">
+          <table class="table table-bordered">
+            <thead>
               <tr>
                 <th>Student Names</th>
                 <th>Course 1</th>
@@ -79,39 +266,45 @@
                 <th>Course 3</th>
                 <th>Course 4</th>
               </tr>
+            </thead>
+            <tbody>
               <!-- Repeat the following row 10 times for a 10x10 table -->
               <tr>
                 <td>Student 1</td>
-                <td><input type="text" /></td>
+                <td><input type="text" class="form-control" value="91" /></td>
                 <td>91</td>
-                <td><input type="text" /></td>
+                <td><input type="text" class="form-control" value="100" /></td>
                 <td>100</td>
               </tr>
               <tr>
                 <td>Student 2</td>
                 <td>73</td>
-                <td><input type="text" /></td>
-                <td><input type="text" /></td>
-                <td><input type="text" /></td>
+                <td><input type="text" class="form-control" /></td>
+                <td><input type="text" class="form-control" /></td>
+                <td><input type="text" class="form-control" /></td>
               </tr>
               <tr>
                 <td>Student 3</td>
-                <td><input type="text" /></td>
-                <td><input type="text" /></td>
+                <td><input type="text" class="form-control" /></td>
+                <td><input type="text" class="form-control" /></td>
                 <td>89</td>
                 <td>97</td>
               </tr>
               <tr>
                 <td>Student 4</td>
-                <td><input type="text" /></td>
+                <td><input type="text" class="form-control" /></td>
                 <td>84</td>
-                <td><input type="text" /></td>
-                <td><input type="text" /></td>
+                <td><input type="text" class="form-control" /></td>
+                <td><input type="text" class="form-control" /></td>
               </tr>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

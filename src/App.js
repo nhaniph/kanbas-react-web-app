@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -17,6 +17,9 @@ function App() {
         >
           Learn React
         </a>
+        <a href="../public/kanbas/home.html">Kanbas</a>
+        <a href="../public/labs/a1/index.html">Lab 1</a>
+        <a href="../public/labs/a2/index.html">Lab 2</a>
       </header>
     </div>
   );

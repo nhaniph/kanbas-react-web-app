@@ -4,117 +4,334 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignments</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Modules</title>
   </head>
   <body>
-    <table width="100%">
-      <tbody>
-        <tr>
-          <td>
-            <ul>
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li><a href="./../home.html">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="#">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="./../grades.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Anouncements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="#">Settings</a></li>
-            </ul>
-          </td>
-          <td>
-            <span>
-              <input type="text" placeholder="Search For Assignments" />
-              <button>Group</button>
-              <button>Assignment</button>
-              <select id="">
-                <option selected value="edit-assignment-dates">
-                  Edit Assignment Dates
-                </option>
-              </select>
-            </span>
+    <div class="wrapper d-flex align-items-stretch">
+      <!-- Kanbas Navigation Sidebar -->
+      <nav id="sidebar" class="active">
+        <h1>
+          <a href="../home.html" class="logo">N</a>
+        </h1>
+        <ul class="list-unstyled components mb-5">
+          <li>
+            <a href="../profile/index.html">
+              <span class="fa fa-user" style="color: #d0d6d3"></span>
+              Account
+            </a>
+          </li>
+          <li class="active">
+            <a href="../courses/index.html">
+              <span class="fa fa-solid fa-gauge" style="color: #ff0000"></span>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-solid fa-book" style="color: #ff0000"></span>
+              Courses
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa fa-regular fa-calendar"
+                style="color: #ff0000"
+              ></span>
+              Calendar
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-solid fa-inbox" style="color: #ff0000"></span>
+              Inbox
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa fa-regular fa-clock"
+                style="color: #ff0000"
+              ></span>
+              History
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa fa-solid fa-circle-info"
+                style="color: #ff0000"
+              ></span>
+              Studio
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-paper-plane" style="color: #ff0000"></span>
+              Commons
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa fa-solid fa-circle-info"
+                style="color: #ff0000"
+              ></span>
+              Help
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Course Navigation Sidebar -->
+      <ul id="account-sidebar" class="p-4">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Modules</a>
+        </li>
+        <li>
+          <a href="#">Piazza</a>
+        </li>
+        <li>
+          <a href="#">Zoom Meetings</a>
+        </li>
+        <li class="active">
+          <a href="../assignments/index.html">Assignments</a>
+        </li>
+        <li>
+          <a href="#">Quizzes</a>
+        </li>
+        <li>
+          <a href="../grades.html">Grades</a>
+        </li>
+        <li>
+          <a href="#">People</a>
+        </li>
+        <li>
+          <a href="#">Panopto Video</a>
+        </li>
+        <li>
+          <a href="#">Discussions</a>
+        </li>
+        <li>
+          <a href="#">Announcements</a>
+        </li>
+        <li>
+          <a href="#">Pages</a>
+        </li>
+        <li>
+          <a href="#">Files</a>
+        </li>
+        <li>
+          <a href="#">Rubrics</a>
+        </li>
+        <li>
+          <a href="#">Outcomes</a>
+        </li>
+        <li>
+          <a href="#">Collaborations</a>
+        </li>
+        <li>
+          <a href="#">Syllabus</a>
+        </li>
+        <li>
+          <a href="#">Progress Reports (EAB Navigate)</a>
+        </li>
+        <li>
+          <a href="#">Settings</a>
+        </li>
+      </ul>
+      <div id="content" class="p-4 p-md-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Course Name</a></li>
+            <li class="breadcrumb-item"><a href="#">Term</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Assignments
+            </li>
+          </ol>
+        </nav>
+        <!-- Assignment Search -->
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search For Assignments"
+            />
+          </div>
+          <div class="ml-2">
+            <button class="btn btn-primary">Group</button>
+            <button class="btn btn-primary">Assignment</button>
+            <select class="form-control">
+              <option selected value="edit-assignment-dates">
+                Edit Assignment Dates
+              </option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <!-- -->
 
-            <hr />
+        <!-- -->
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title text-dark">
+                <a data-toggle="collapse" href="#collapse1"
+                  >ASSIGNMENTS (40% of Total)</a
+                >
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <ul class="list-group list-unstyled">
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="mr-3 border-left border-success pl-3">
+                      <span class="fas fa-check text-success"></span>
+                    </div>
+                    <div>
+                      <a href="edit.html">A1 SETUP</a> | Not available yet
+                    </div>
+                  </div>
+                </li>
 
-            <h3>
-              ASSIGNMENTS 40% of Total
-              <select id="">
-                <option selected value="Edit">Edit</option>
-              </select>
-            </h3>
-            <ul>
-              <li><a href="edit.html">A1</a> | Not available yet</li>
-              <li><a href="edit.html">A2</a> | Not available yet</li>
-              <li><a href="edit.html">A3</a> | Not available yet</li>
-              <li><a href="edit.html">A4</a> | Not available yet</li>
-              <li><a href="edit.html">A5</a> | Not available yet</li>
-              <li><a href="edit.html">A6</a> | Not available yet</li>
-            </ul>
-            <br />
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="mr-3 border-left border-success pl-3">
+                      <span class="fas fa-check text-success"></span>
+                    </div>
+                    <div>
+                      <a href="edit.html">A2 HTML</a> | Not available yet
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse1"
+                  >QUIZZES (10% of Total)</a
+                >
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <ul class="list-group list-unstyled">
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="mr-3 border-left border-success pl-3">
+                      <span class="fas fa-check text-success"></span>
+                    </div>
+                    <div><a href="edit.html">Q1 </a> | Not available yet</div>
+                  </div>
+                </li>
 
-            <h3>
-              QUIZZES 10% of Total
-              <select id="">
-                <option selected value="Edit">Edit</option>
-              </select>
-            </h3>
-            <ul>
-              <li><a href="#">Q1</a> | Not available yet</li>
-              <li><a href="#">Q2</a> | Not available yet</li>
-              <li><a href="#">Q3</a> | Not available yet</li>
-              <li><a href="#">Q4</a> | Not available yet</li>
-              <li><a href="#">Q5</a> | Not available yet</li>
-            </ul>
-            <br />
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="mr-3 border-left border-success pl-3">
+                      <span class="fas fa-check text-success"></span>
+                    </div>
+                    <div><a href="edit.html">Q2</a> | Not available yet</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <h3>
-              EXAMS 20% of Total
-              <select id="">
-                <option selected value="Edit">Edit</option>
-              </select>
-            </h3>
-            <ul>
-              <li><a href="#">Midterm</a> | Not available yet</li>
-              <li><a href="#">Final</a> | Not available yet</li>
-            </ul>
-            <br />
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse1"
+                  >EXAMS (10% of Total)</a
+                >
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <ul class="list-group list-unstyled">
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="mr-3 border-left border-success pl-3">
+                      <span class="fas fa-check text-success"></span>
+                    </div>
+                    <div>
+                      <a href="edit.html">MIDTERM </a> | Not available yet
+                    </div>
+                  </div>
+                </li>
 
-            <h3>
-              PROJECT 30% of Total
-              <select id="">
-                <option selected value="Edit">Edit</option>
-              </select>
-            </h3>
-            <ul>
-              <li><a href="#">Project</a> | Not available yet</li>
-            </ul>
-            <br />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="mr-3 border-left border-success pl-3">
+                      <span class="fas fa-check text-success"></span>
+                    </div>
+                    <div><a href="edit.html">FINAL</a> | Not available yet</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse1"
+                  >PROJECTS (10% of Total)</a
+                >
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <ul class="list-group list-unstyled">
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="mr-3 border-left border-success pl-3">
+                      <span class="fas fa-check text-success"></span>
+                    </div>
+                    <div><a href="edit.html">P1 </a> | Not available yet</div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="mr-3 border-left border-success pl-3">
+                      <span class="fas fa-check text-success"></span>
+                    </div>
+                    <div><a href="edit.html">P2</a> | Not available yet</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

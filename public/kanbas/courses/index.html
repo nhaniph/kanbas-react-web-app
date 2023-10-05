@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Course Home</title>
+    <style>
+      /* Custom CSS for spacing */
+      .course-card {
+        margin: 20px 10px;
+        width: 250px;
+        max-width: 270px;
+      }
+
+      /* Media queries for responsive design */
+      @media (min-width: 992px) {
+        .course-card {
+          flex: 0 0 calc(25% - 20px);
+        }
+      }
+
+      @media (max-width: 991px) {
+        .course-card {
+          flex: 0 0 calc(33.33% - 20px);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .course-card {
+          flex: 0 0 calc(50% - 20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar" class="active">
+        <h1><a href="../home.html" class="logo">N</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li>
+            <a href="../profile/index.html"
+              ><span class="fa fa-user" style="color: #d0d6d3"></span>
+              Account</a
+            >
+          </li>
+          <li class="active">
+            <a href="../courses/index.html"
+              ><span class="fa fa-solid fa-gauge" style="color: #ff0000"></span>
+              Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fa fa-solid fa-book" style="color: #ff0000"></span>
+              Courses</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span
+                class="fa fa-regular fa-calendar"
+                style="color: #ff0000"
+              ></span>
+              Calendar</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fa fa-solid fa-inbox" style="color: #ff0000"></span>
+              Inbox</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span
+                class="fa fa-regular fa-clock"
+                style="color: #ff0000"
+              ></span>
+              History</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span
+                class="fa fa-solid fa-circle-info"
+                style="color: #ff0000"
+              ></span>
+              Studio</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fa fa-paper-plane" style="color: #ff0000"></span>
+              Commons</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span
+                class="fa fa-solid fa-circle-info"
+                style="color: #ff0000"
+              ></span>
+              Help</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+        <h4 class="mb-4">Course Home</h4>
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Main Content Area -->
+            <div class="col-md-9 p-4">
+              <h1>Dashboard</h1>
+              <hr />
+              <h2>Published Courses</h2>
+              <div class="d-flex flex-row flex-wrap">
+                <!-- Course Cards -->
+                <div class="card course-card">
+                  <img
+                    src="../images/terminator.jpg"
+                    class="card-img-top"
+                    alt="Course 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="course.html">Course Title 1</a>
+                    </h5>
+                    <p class="card-text">Term: Spring</p>
+                    <p class="card-text">Year: 2023</p>
+                    <p class="card-text">Section: A</p>
+                  </div>
+                </div>
+                <div class="card course-card">
+                  <img
+                    src="../images/terminator.jpg"
+                    class="card-img-top"
+                    alt="Course 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="course.html">Course Title 2</a>
+                    </h5>
+                    <p class="card-text">Term: Summer</p>
+                    <p class="card-text">Year: 2023</p>
+                    <p class="card-text">Section: B</p>
+                  </div>
+                </div>
+                <div class="card course-card">
+                  <img
+                    src="../images/terminator.jpg"
+                    class="card-img-top"
+                    alt="Course 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="course.html">Course Title 3</a>
+                    </h5>
+                    <p class="card-text">Term: Summer</p>
+                    <p class="card-text">Year: 2023</p>
+                    <p class="card-text">Section: B</p>
+                  </div>
+                </div>
+                <div class="card course-card">
+                  <img
+                    src="../images/terminator.jpg"
+                    class="card-img-top"
+                    alt="Course 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="course.html">Course Title 4</a>
+                    </h5>
+                    <p class="card-text">Term: Summer</p>
+                    <p class="card-text">Year: 2023</p>
+                    <p class="card-text">Section: B</p>
+                  </div>
+                </div>
+                <div class="card course-card">
+                  <img
+                    src="../images/terminator.jpg"
+                    class="card-img-top"
+                    alt="Course 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="course.html">Course Title 5</a>
+                    </h5>
+                    <p class="card-text">Term: Summer</p>
+                    <p class="card-text">Year: 2023</p>
+                    <p class="card-text">Section: B</p>
+                  </div>
+                </div>
+                <div class="card course-card">
+                  <img
+                    src="../images/terminator.jpg"
+                    class="card-img-top"
+                    alt="Course 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="course.html">Course Title 6</a>
+                    </h5>
+                    <p class="card-text">Term: Summer</p>
+                    <p class="card-text">Year: 2023</p>
+                    <p class="card-text">Section: B</p>
+                  </div>
+                </div>
+                <div class="card course-card">
+                  <img
+                    src="../images/terminator.jpg"
+                    class="card-img-top"
+                    alt="Course 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="course.html">Course Title 7</a>
+                    </h5>
+                    <p class="card-text">Term: Summer</p>
+                    <p class="card-text">Year: 2023</p>
+                    <p class="card-text">Section: B</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

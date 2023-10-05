@@ -1,0 +1,47 @@
+/* Sidebar styling */
+#account-sidebar {
+  width: 200px;
+  list-style: none;
+  padding: 0;
+}
+
+#account-sidebar li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Default link style */
+#account-sidebar a {
+  display: block;
+  text-decoration: none;
+  color: red;
+  padding: 5px 0;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Selected link style */
+#account-sidebar a.active {
+  color: black;
+  border-left: 5px solid black;
+  padding-left: 15px;
+}
+
+/* Spacing between links */
+#account-sidebar a + a {
+  margin-top: 15px;
+}
+
+/* Space between the left black border and link text */
+#account-sidebar a.active {
+  margin-left: 8px;
+}
+
+/* Minimum width of the sidebar */
+@media (max-width: 200px) {
+  #account-sidebar {
+    width: 190px;
+  }
+}
